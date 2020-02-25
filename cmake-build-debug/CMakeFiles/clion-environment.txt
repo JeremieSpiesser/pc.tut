@@ -1,0 +1,4 @@
+ToolSet: Debian GNU/Linux 10 (buster) (local)@C:\Users\Nitorac\AppData\Local\Microsoft\WindowsApps\debian.exe
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=/usr/bin/make
