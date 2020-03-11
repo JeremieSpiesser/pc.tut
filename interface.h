@@ -27,12 +27,12 @@ void dispNewPhase(int turnNumber, int phaseNumber, int startedWith);
 */
 void dispBoard(plateau board);
 
-/* @requires Rien
+/* @requires Un entier ensiie correspondant à l'ENSIIE à qui on demande de choisir.
    @assigns Rien
    @ensures Demande au joueur le type de carte élève qu'il choisit et retourne la carte correspondant
       à son choix (FISE ou FISA).
 */
-carte askEleve();
+carte askEleve(int ensiie);
 
 /* @requires Le plateau de l'ENSIIE qui joue, de type plateau.
    @assigns Rien
