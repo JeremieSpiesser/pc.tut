@@ -8,10 +8,10 @@
 
 typedef struct plateau* plateau;
 
-//@requires rien
+//@requires uid identifiant unique permettant d'identifier l'ENSIIE/le plateau
 //@asigns rien
 //@ensures retourne un nouveau plateau
-plateau createPlateau();
+plateau createPlateau(int uid);
 
 //@requires un plateau valide
 //@assigns libèration de la case mémoire associée au plateau passé en argument
