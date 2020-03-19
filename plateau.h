@@ -26,7 +26,7 @@ void piocherCarte(plateau p);
 //@requires un tableaux de plateaux p, n taille de p, nt : numéro de tour
 //@assigns rien
 //@ensures signifie au plateau qu'un nouveau tour commence
-void nouveauTour(plateau p[], int n, int* pnt);
+void nouveauTour(plateau p[], short int n, int* pnt);
 
 //@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
 //@assigns rien
@@ -57,7 +57,7 @@ int nbPE(plateau p);
 //@requires un tableau de plateaux p, n taille de p
 //@assigns rien
 //@ensures retourne -2 si la partie n'est pas terminee, -1 si egalite et sinon renvoie l'indice du plateau gagnant (il ne peut y en avoir qu'un) 
-int finPartie(plateau p[], int n);
+short int finPartie(plateau p[], short int n);
 
 //@requires un plateau p initialise
 //@assigns rien
@@ -67,6 +67,6 @@ int nbNewElevesNewPhase(plateau p);
 //@requires un tableau de plateaux p, n taille de p
 //@assigns rien
 //@ensures la cloture du tour, comprend le calcul des DD de chaque plateau 
-void finTour(plateau p[], int n);
+void finTour(plateau p[], short int n);
 
 #endif //PCTUT_PLATEAU_H
