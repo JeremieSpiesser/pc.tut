@@ -56,8 +56,8 @@ int nbPE(plateau p);
 
 //@requires une liste de plateaux p[] initialises
 //@assigns rien
-//@ensures retourne -2 si la partie n'est pas terminee, -1 en cas d'egalite et i si le plateau p[i] l'emporte
-int finPartie(plateau p[]);
+//@ensures retourne null si la partie n'est pas terminee, sinon la liste des vainqueurs (ceux ayant le score le plus élevé)
+int* finPartie(plateau p[]);
 
 //@requires un plateau p initialise
 //@assigns rien
