@@ -15,12 +15,12 @@
 void dispNewTurn(int turnNumber);
 
 /* @requires Le numéro du nouveau tour turnNumber, entier positif. Le numéro de la phase phaseNumber (0 ou 1),
-      l'ENSIIE tirée au sort pour commencer au début startedWith (de type plateau).
+      l'ENSIIE qui va jouer, de type plateau.
    @assigns Rien
    @ensures Affiche en console un message signifiant qu’une nouvelle phase commence
       et l’ENSIIE associée à cette phase.
 */
-void dispNewPhase(int turnNumber, int phaseNumber, plateau startedWith);
+void dispNewPhase(int turnNumber, int phaseNumber, plateau board);
 
 /* @requires Le plateau d'une ENSIIE, qui doit être affiché, de type plateau.
    @assigns Rien
