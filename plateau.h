@@ -23,10 +23,10 @@ void freePlateau(plateau p);
 //@ensures pioche une carte du deck et la met dans la main
 void piocherCarte(plateau p);
 
-//@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
+//@requires un tableaux de plateaux p, n taille de p, nt : numéro de tour
 //@assigns rien
 //@ensures signifie au plateau qu'un nouveau tour commence
-void nouveauTour(plateau p, int* pnt);
+void nouveauTour(plateau p[], int n, int nt);
 
 //@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
 //@assigns rien
@@ -54,19 +54,19 @@ void playCarte(plateau p, carte c);
 //@ensures retourne le nombre de points d'energie a la disposition de l'ENSIIE du plateau
 int nbPE(plateau p);
 
-//@requires une liste de plateaux p[] initialises
+//@requires un tableau de plateaux p, n taille de p
 //@assigns rien
-//@ensures retourne null si la partie n'est pas terminee, sinon la liste des vainqueurs (ceux ayant le score le plus élevé)
-int* finPartie(plateau p[]);
+//@ensures retourne -2 si la partie n'est pas terminee, -1 si egalite et sinon renvoie l'indice du plateau gagnant (il ne peut y en avoir qu'un) 
+int finPartie(plateau p[], int n);
 
 //@requires un plateau p initialise
 //@assigns rien
 //@ensures retourne le nombre de cartes eleve qui seront ajoutees au plateau
 int nbNewElevesNewPhase(plateau p);
 
-//@requires une liste de plateaux p[] initialises
+//@requires un tableau de plateaux p, n taille de p
 //@assigns rien
 //@ensures la cloture du tour, comprend le calcul des DD de chaque plateau 
-void finTour(plateau p[]);
+void finTour(plateau p[], int n);
 
 #endif //PCTUT_PLATEAU_H
