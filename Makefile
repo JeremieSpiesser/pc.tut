@@ -1,12 +1,12 @@
-FLAGS=-Wall -Wextra -std=c99
+FLAGS=-g -Wall -Wextra -std=c99
 
 all: main clean
 
 main: main.o carte.o plateau.o interface.o
-	gcc -g -o $@ $^ $(FLAGS)
+	gcc $(FLAGS) -g -o $@ $^
 
 %.o: %.c
-	gcc -g -o $@ -c $< $(FLAGS)
+	gcc $(FLAGS) -g -o $@ -c $<
 
 clean:
 	rm -rf *.o
