@@ -4,6 +4,7 @@
 
 #ifndef PCTUT_INTERFACE_H
 #define PCTUT_INTERFACE_H
+#include "carte.h"
 #include "plateau.h"
 
 /* @requires Le numéro du nouveau tour turnNumber, entier positif.
@@ -27,21 +28,21 @@ void dispNewPhase(int turnNumber, int phaseNumber, plateau startedWith);
 */
 void dispBoard(plateau board);
 
-/* @requires Un entier ensiie correspondant à l'ENSIIE à qui on demande de choisir.
+/* @requires Un plateau board correspondant à l'ENSIIE à qui on demande de choisir.
    @assigns Rien
    @ensures Demande au joueur le type de carte élève qu'il choisit et retourne la carte correspondant
-      à son choix (FISE ou FISA).
+      à son choix (carte élève de type FISE ou FISA).
 */
-carte askEleve(int ensiie);
+carte askEleve(plateau board);
 
 /* @requires Le plateau de l'ENSIIE qui joue, de type plateau.
    @assigns Rien
    @ensures Demande à un joueur de choisir une carte de sa main ou de finir sa phase.
-      Retourne la carte correspondant au choix ou la carte vide si il finit sa phase.
+      Retourne la carte correspondant au choix ou la carte vide (type 0) si il finit sa phase.
 */
 carte askAction(plateau board);
 
-/* @requires Le plateau du joueur gagnant, de type plateau.
+/* @requires Le plateau du joueur gagnant, de type plateau. Peut être NULL en cas d'égalité.
    @assigns Rien
    @ensures Affiche en console un message annonçant le gagnant, ou une égalité.
 */
