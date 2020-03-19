@@ -26,12 +26,12 @@ void piocherCarte(plateau p);
 //@requires un tableaux de plateaux p, n taille de p, nt : numéro de tour
 //@assigns rien
 //@ensures signifie au plateau qu'un nouveau tour commence
-void nouveauTour(plateau p[], int n, int nt);
+void nouveauTour(plateau p[], int n, int* pnt);
 
 //@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
 //@assigns rien
 //@ensures retourne nombre de cartes piochées par une ENSIIE au début de sa phase
-int nbCartesNewPhase(plateau p, int* pnt);
+int nbCartesNewPhase(plateau p, int nt);
 
 //@requires un plateau p valide, une carte c et un entier nt numéro de tour (commence à 1)
 //@assigns ajoute la carte a la liste des cartes en jeu
