@@ -54,19 +54,19 @@ void playCarte(plateau p, carte c);
 //@ensures retourne le nombre de points d'energie a la disposition de l'ENSIIE du plateau
 int nbPE(plateau p);
 
-//@requires deux plateaux p1 et p2 initialises
+//@requires une liste de plateaux p[] initialises
 //@assigns rien
-//@ensures retourne 0 si la partie n'est pas terminee, 1 si p1 l'emporte, 2 si c'est p2, 3 en cas d'egalite
-int finPartie(plateau p1, plateau p2);
+//@ensures retourne -2 si la partie n'est pas terminee, -1 en cas d'egalite et i si le plateau p[i] l'emporte
+int finPartie(plateau p[]);
 
 //@requires un plateau p initialise
 //@assigns rien
 //@ensures retourne le nombre de cartes eleve qui seront ajoutees au plateau
 int nbNewElevesNewPhase(plateau p);
 
-//@requires deux plateaux p1 et p2 initialises
+//@requires une liste de plateaux p[] initialises
 //@assigns rien
 //@ensures la cloture du tour, comprend le calcul des DD de chaque plateau 
-void finTour(plateau p1, plateau p2);
+void finTour(plateau p[]);
 
 #endif //PCTUT_PLATEAU_H
