@@ -1,13 +1,28 @@
+/**
+ * \file main.c
+ * \brief Programme permettant de jouer à Durableverse
+ * \author Tony "Nitorac" Ranini
+ * \version 1.0
+ * \date 20 mars 2020
+ *
+ * Fichier principal pour jouer à Durableverse
+ *
+ */
 #include <stdlib.h>
 #include "carte.h"
 #include "interface.h"
 #include "plateau.h"
 
-/*
- * Le nombre de joueurs ici doit pouvoir être < 32 760
- */
+//! Le nombre de joueurs ici doit être < 32 760
 #define NB_JOUEURS 2
 
+/**
+ * Fonction principale qui permet de jouer à Durableverse
+ *
+ * @param argc Le nombre d'arguments
+ * @param argv Le tableau des arguments
+ * @return Renvoie 0 ou l'éventuel code d'erreur survenu
+ */
 int main(int argc, char* argv[]) {
     short stop = 0;
     int tours = 0;
