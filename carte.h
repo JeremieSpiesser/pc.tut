@@ -13,7 +13,7 @@
 #ifndef PCTUT_CARTE_H
 #define PCTUT_CARTE_H
 
-/// \struct struct carte_eleve
+/// \struct carte_eleve
 /// \brief champs possibles pour une carte élève
 struct carte_eleve{
     unsigned char type; /*!< 0 : Carte vide, 1 : FISE, 2 : FISA */
@@ -26,7 +26,7 @@ struct carte_eleve{
 /// \brief pointeur vers un struct carte_eleve
 typedef struct carte_eleve* carte_eleve;
 
-/// \struct struct carte_personnel
+/// \struct carte_personnel
 /// \brief champs possibles pour une carte personnel
 struct carte_personnel{
     unsigned int numero; /*!< Le numéro de la carte personnel (de 1 à 20 dans le jeu de base). Si 0 : carte nulle */
@@ -44,7 +44,7 @@ struct carte_personnel{
 /// \brief pointeur vers un struct carte_personnel
 typedef struct carte_personnel* carte_personnel;
 
-/// \struct struct carte_action
+/// \struct carte_action
 /// \brief champs possibles pour une carte action
 struct carte_action{
     unsigned int numero; /*!< Le numéro de la carte action (de 21 à 31 dans le jeu de base) */
