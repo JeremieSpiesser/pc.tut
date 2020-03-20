@@ -13,7 +13,7 @@
 #ifndef PCTUT_CARTE_H
 #define PCTUT_CARTE_H
 
-/// \struct carte_eleve
+/// \struct struct carte_eleve
 /// \brief champs possibles pour une carte élève
 struct carte_eleve{
     unsigned char type; /*!< 0 : Carte vide, 1 : FISE, 2 : FISA */
@@ -22,13 +22,15 @@ struct carte_eleve{
     int p_energie; /*!< points d'énergie */
 };
 
+/// Carte eleve
+/// \brief pointeur vers un struct carte_eleve
 typedef struct carte_eleve* carte_eleve;
 
-/// \struct carte_personnel
+/// \struct struct carte_personnel
 /// \brief champs possibles pour une carte personnel
 struct carte_personnel{
     unsigned int numero; /*!< Le numéro de la carte personnel (de 1 à 20 dans le jeu de base). Si 0 : carte nulle */
-    int cout;
+    int cout; /*!< Cout de la carte */
     char* effets; /*!< //Pour stocker les différents effets de la carte, on utilise un char* noté effets
     si effets[i] == 0 : c'est que la carte ne possède pas l'effet numéro i (on numérote les effets de 0 à 11)
     si effets[i] == k avec k un entier : c'est que la carte possède l'effet numéro i avec comme "paramètre d'effet" k
@@ -38,16 +40,20 @@ struct carte_personnel{
     le mot décrivant ses effets est : "220000000001\0" */
 };
 
+/// Carte personnel
+/// \brief pointeur vers un struct carte_personnel
 typedef struct carte_personnel* carte_personnel;
 
-/// \struct carte_action
+/// \struct struct carte_action
 /// \brief champs possibles pour une carte action
 struct carte_action{
     unsigned int numero; /*!< Le numéro de la carte action (de 21 à 31 dans le jeu de base) */
-    int cout;
+    int cout; /*!< Cout de la carte action */
     int quantite; /*!< Le nombre de fois que la carte existe dans le deck */
 };
 
+/// Carte action
+/// \brief pointeur vers un struct carte_action
 typedef struct carte_action* carte_action;
 
 /// \struct carte
@@ -66,7 +72,7 @@ typedef struct carte {
 
 //Fonctions disponibles
 
-/// \fn cout
+/// \fn cout(carte c)
 /// Obtenir le cout de la carte passée en argument
 /// \param c
 /// \return le cout de la carte passée en argument (0 si c'est une carte_eleve)
