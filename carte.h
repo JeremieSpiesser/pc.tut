@@ -56,9 +56,9 @@ struct carte_action{
 /// \brief pointeur vers un struct carte_action
 typedef struct carte_action* carte_action;
 
-/// \struct carte
+/// carte
 /// \brief le type carte qui redirige en fonction du cas vers les structures appropriées
-struct carte {
+typedef struct carte {
     unsigned char type; /*!< 0 : carte nulle (les champs suivants sont ignorés et/ou valent NULL),
     // 1 : carte_eleve,
     // 2 : carte_personnel
@@ -67,11 +67,7 @@ struct carte {
     carte_personnel perso; /*!< NULL si type != 2 */
     carte_action action; /*!< NULL si type != 3 */
     //Il n'y a qu'un et un seul de ces pointeurs qui est non nul (et qui pointe vers la carte)
-};
-
-/// Carte
-/// \brief rename struct carte
-typedef struct carte carte;
+} carte ;
 
 //Fonctions disponibles
 
