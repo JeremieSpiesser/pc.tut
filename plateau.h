@@ -10,9 +10,13 @@
 #define PCTUT_PLATEAU_H
 #include "carte.h"
 
+/**
+ * @brief Definission de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu, la liste des cartes action et personnel en jeu, l'identifiant de l'ENSIIE associée au plateau, ses PE et DD
+ */
 typedef struct plateau* plateau;
 
 /**
+ * \fn plateau createPlateau(int uid)
  * Bring a new platal in this world of sufferance dominated by HPC students
  *
  * @param uid identifiant unique permettant d'identifier l'ENSIIE/le plateau
@@ -21,6 +25,7 @@ typedef struct plateau* plateau;
 plateau createPlateau(int uid);
 
 /**
+ * \fn void freePlateau(plateau p)
  * Libère la case mémoire associée au plateau passé en argument : p est un elfe liiiiiibre !
  *
  * /!\ : libèration de la case mémoire associée au plateau passé en argument
@@ -29,6 +34,7 @@ plateau createPlateau(int uid);
 void freePlateau(plateau p);
 
 /**
+ * \fn void piocherCarte(plateau p)
  * Permet la pioche d'une carte du deck et la met dans la main : c'est l'heure du dududuDUEL !
  *
  * /!\ : modifie le deck et la main
@@ -37,15 +43,17 @@ void freePlateau(plateau p);
 void piocherCarte(plateau p);
 
 /**
+ * \fn void nouveauTour(plateau p[], short int n, int* pnt)
  * Prépare le plateau au terrible tour qui s'annonce, durant lequel il devra faire face aux ténébreuses forces ENSIIE adverses
  *
  * @param p tableaux de plateaux
  * @param n taille de p
- * @param nt numéro de tour
+ * @param pnt pointeur vers le numéro de tour
  */
 void nouveauTour(plateau p[], short int n, int* pnt);
 
 /**
+ * \fn int nbCartesNewPhase(plateau p, int nt)
  * Calcule le nombre de cartes piochées par une ENSIIE en début de phase
  *
  * @param p plateau correct non vide
@@ -55,6 +63,7 @@ void nouveauTour(plateau p[], short int n, int* pnt);
 int nbCartesNewPhase(plateau p, int nt);
 
 /**
+ * \fn int addCarte(plateau p, carte c, int nt)
  * Ajoute une carte au plateau
  *
  * /!\ : ajoute la carte a la liste des cartes en jeu
@@ -66,6 +75,7 @@ int nbCartesNewPhase(plateau p, int nt);
 int addCarte(plateau p, carte c, int nt);
 
 /**
+ * \fn void addEleve(plateau p, carte c)
  * Ajoute une carte eleve au plateau
  *
  * /!\ : ajoute la carte eleve a la liste des cartes en jeu par le biais de la fonction addCarte
@@ -75,6 +85,7 @@ int addCarte(plateau p, carte c, int nt);
 void addEleve(plateau p, carte c);
 
 /**
+ * \fn void playCarte(plateau p, carte c)
  * Cette fonction permet de jouer une carte
  *
  * /!\ : retire c de la main pour la placer sur le terrain
@@ -84,6 +95,7 @@ void addEleve(plateau p, carte c);
 void playCarte(plateau p, carte c);
 
 /**
+ * \fn int nbPE(plateau p)
  * Calcule le nombre de points d'énergie à la disposition de l'ENSIIE du plateau
  *
  * @param p plateau initialise
@@ -92,6 +104,7 @@ void playCarte(plateau p, carte c);
 int nbPE(plateau p);
 
 /**
+ * \fn short int finPartie(plateau p[], short int n)
  * Cette fonction permet de déterminer si la partie est terminée
  *
  * @param p tableau de plateaux
@@ -101,6 +114,7 @@ int nbPE(plateau p);
 short int finPartie(plateau p[], short int n);
 
 /**
+ * \fn int nbNewElevesNewPhase(plateau p)
  * Cette fonction retourne le nombre de cartes eleve qui seront ajoutees au plateau
  *
  * @param p plateau initialise
@@ -109,6 +123,7 @@ short int finPartie(plateau p[], short int n);
 int nbNewElevesNewPhase(plateau p);
 
 /**
+ * \fn void finTour(plateau p[], short int n)
  * Cette fonction assure la cloture du tour, comprend le calcul des DD de chaque plateau
  *
  * @param p tableau de plateaux
