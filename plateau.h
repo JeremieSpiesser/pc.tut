@@ -41,7 +41,7 @@ void piocherCarte(plateau p);
  *
  * @param p tableaux de plateaux
  * @param n taille de p
- * @param nt numéro de tour
+ * @param pnt pointeur vers le numéro de tour
  */
 void nouveauTour(plateau p[], short int n, int* pnt);
 
