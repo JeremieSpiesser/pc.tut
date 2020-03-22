@@ -1,30 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="text/xhtml;charset=UTF-8" http-equiv="Content-Type"/>
-<meta content="IE=9" http-equiv="X-UA-Compatible"/>
-<meta content="Doxygen 1.8.13" name="generator"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>PC(Tut): Référence du fichier main.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="dynsections.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script src="resize.js" type="text/javascript"></script>
-<script src="navtreedata.js" type="text/javascript"></script>
-<script src="navtree.js" type="text/javascript"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script src="search/searchdata.js" type="text/javascript"></script>
-<script src="search/search.js" type="text/javascript"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
@@ -41,8 +41,8 @@
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
-<script src="menudata.js" type="text/javascript"></script>
-<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
   initMenu('',true,false,'search.php','Recherche');
@@ -51,14 +51,14 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div class="ui-resizable side-nav-resizable" id="side-nav">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div class="sync" id="nav-sync"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div class="ui-resizable-handle" id="splitbar"
-       style="-moz-user-select:none;">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -67,15 +67,15 @@ $(document).ready(function(){initNavTree('main_8c.html','');});
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
-     onkeydown="return searchBox.OnSearchSelectKey(event)"
+     onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
-     onmouseover="return searchBox.OnSearchSelectShow()">
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe frameborder="0" id="MSearchResults"
-        name="MSearchResults" src="javascript:void(0)">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
@@ -97,11 +97,11 @@ $(document).ready(function(){initNavTree('main_8c.html','');});
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de main.c:</div>
 <div class="dyncontent">
-<div class="center"><img alt="" border="0" src="main_8c__incl.png" usemap="#main_8c"/></div>
-<map id="main_8c" name="main_8c">
-<area alt="" coords="147,229,214,256" href="carte_8h.html" id="node3" shape="rect" title="Module de gestion des cartes. "/>
-<area alt="" coords="152,80,244,107" href="interface_8h.html" id="node4" shape="rect" title="Module d&#39;échange avec l&#39;utilisateur (interface)&#39;. "/>
-<area alt="" coords="218,155,301,181" href="plateau_8h.html" id="node5" shape="rect" title="Module relatif à la creation, gestion et destruction de chaque plateau. "/>
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#main_8c" alt=""/></div>
+<map name="main_8c" id="main_8c">
+<area shape="rect" id="node3" href="carte_8h.html" title="Module de gestion des cartes. " alt="" coords="147,229,214,256"/>
+<area shape="rect" id="node4" href="interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface)&#39;. " alt="" coords="152,80,244,107"/>
+<area shape="rect" id="node5" href="plateau_8h.html" title="Module relatif à la creation, gestion et destruction de chaque plateau. " alt="" coords="218,155,301,181"/>
 </map>
 </div>
 </div>
@@ -109,17 +109,17 @@ Graphe des dépendances par inclusion de main.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afdb4f6f91f985d95ef85c525e9c6f3e8"><td align="right" class="memItemLeft" valign="top"><a id="afdb4f6f91f985d95ef85c525e9c6f3e8"></a>
+<tr class="memitem:afdb4f6f91f985d95ef85c525e9c6f3e8"><td class="memItemLeft" align="right" valign="top"><a id="afdb4f6f91f985d95ef85c525e9c6f3e8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#afdb4f6f91f985d95ef85c525e9c6f3e8">NB_JOUEURS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memdesc:afdb4f6f91f985d95ef85c525e9c6f3e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le nombre de joueurs ici doit être &lt; 32 760. <br /></td></tr>
 <tr class="separator:afdb4f6f91f985d95ef85c525e9c6f3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td align="right" class="memItemLeft" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a id="details" name="details"></a><h2 class="groupheader">Description détaillée</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Programme permettant de jouer à Durableverse. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Tony "Nitorac" Ranini </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
@@ -190,12 +190,12 @@ Fonctions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
-<div class="navpath" id="nav-path"><!-- id is needed for treeview function! -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
     <li class="footer">Généré par
     <a href="http://www.doxygen.org/index.html">
-    <img alt="doxygen" class="footer" src="doxygen.png"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

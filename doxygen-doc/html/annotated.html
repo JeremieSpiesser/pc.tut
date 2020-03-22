@@ -1,30 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="text/xhtml;charset=UTF-8" http-equiv="Content-Type"/>
-<meta content="IE=9" http-equiv="X-UA-Compatible"/>
-<meta content="Doxygen 1.8.13" name="generator"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>PC(Tut): Structures de données</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="dynsections.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script src="resize.js" type="text/javascript"></script>
-<script src="navtreedata.js" type="text/javascript"></script>
-<script src="navtree.js" type="text/javascript"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script src="search/searchdata.js" type="text/javascript"></script>
-<script src="search/search.js" type="text/javascript"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
@@ -41,8 +41,8 @@
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
-<script src="menudata.js" type="text/javascript"></script>
-<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
   initMenu('',true,false,'search.php','Recherche');
@@ -51,14 +51,14 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div class="ui-resizable side-nav-resizable" id="side-nav">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div class="sync" id="nav-sync"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div class="ui-resizable-handle" id="splitbar"
-       style="-moz-user-select:none;">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -67,15 +67,15 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
-     onkeydown="return searchBox.OnSearchSelectKey(event)"
+     onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
-     onmouseover="return searchBox.OnSearchSelectShow()">
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe frameborder="0" id="MSearchResults"
-        name="MSearchResults" src="javascript:void(0)">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
@@ -86,20 +86,20 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <div class="contents">
 <div class="textblock">Liste des structures de données avec une brève description :</div><div class="directory">
 <table class="directory">
-<tr class="even" id="row_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte.html" target="_self">carte</a></td><td class="desc">Le type carte qui redirige en fonction du cas vers les structures appropriées </td></tr>
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte.html" target="_self">carte</a></td><td class="desc">Le type carte qui redirige en fonction du cas vers les structures appropriées </td></tr>
 <tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte__action.html" target="_self">carte_action</a></td><td class="desc">Champs possibles pour une carte action </td></tr>
-<tr class="even" id="row_2_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte__eleve.html" target="_self">carte_eleve</a></td><td class="desc">Champs possibles pour une carte élève </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte__eleve.html" target="_self">carte_eleve</a></td><td class="desc">Champs possibles pour une carte élève </td></tr>
 <tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structcarte__personnel.html" target="_self">carte_personnel</a></td><td class="desc">Champs possibles pour une carte personnel </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
-<div class="navpath" id="nav-path"><!-- id is needed for treeview function! -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="footer">Généré par
     <a href="http://www.doxygen.org/index.html">
-    <img alt="doxygen" class="footer" src="doxygen.png"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

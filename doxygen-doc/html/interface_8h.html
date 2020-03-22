@@ -1,30 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta content="text/xhtml;charset=UTF-8" http-equiv="Content-Type"/>
-<meta content="IE=9" http-equiv="X-UA-Compatible"/>
-<meta content="Doxygen 1.8.13" name="generator"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>PC(Tut): Référence du fichier interface.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script src="jquery.js" type="text/javascript"></script>
-<script src="dynsections.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script src="resize.js" type="text/javascript"></script>
-<script src="navtreedata.js" type="text/javascript"></script>
-<script src="navtree.js" type="text/javascript"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script src="search/searchdata.js" type="text/javascript"></script>
-<script src="search/search.js" type="text/javascript"></script>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
@@ -41,8 +41,8 @@
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </script>
-<script src="menudata.js" type="text/javascript"></script>
-<script src="menu.js" type="text/javascript"></script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 $(function() {
   initMenu('',true,false,'search.php','Recherche');
@@ -51,14 +51,14 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div class="ui-resizable side-nav-resizable" id="side-nav">
+<div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
     <div id="nav-tree-contents">
-      <div class="sync" id="nav-sync"></div>
+      <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div class="ui-resizable-handle" id="splitbar"
-       style="-moz-user-select:none;">
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
@@ -67,15 +67,15 @@ $(document).ready(function(){initNavTree('interface_8h.html','');});
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
-     onkeydown="return searchBox.OnSearchSelectKey(event)"
+     onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
-     onmouseover="return searchBox.OnSearchSelectShow()">
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe frameborder="0" id="MSearchResults"
-        name="MSearchResults" src="javascript:void(0)">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
 
@@ -94,18 +94,18 @@ $(document).ready(function(){initNavTree('interface_8h.html','');});
 </div><div class="textblock"><div class="dynheader">
 Graphe des dépendances par inclusion de interface.h:</div>
 <div class="dyncontent">
-<div class="center"><img alt="" border="0" src="interface_8h__incl.png" usemap="#interface_8h"/></div>
-<map id="interface_8h" name="interface_8h">
-<area alt="" coords="18,155,85,181" href="carte_8h.html" id="node2" shape="rect" title="Module de gestion des cartes. "/>
-<area alt="" coords="50,80,133,107" href="plateau_8h.html" id="node3" shape="rect" title="Module relatif à la creation, gestion et destruction de chaque plateau. "/>
+<div class="center"><img src="interface_8h__incl.png" border="0" usemap="#interface_8h" alt=""/></div>
+<map name="interface_8h" id="interface_8h">
+<area shape="rect" id="node2" href="carte_8h.html" title="Module de gestion des cartes. " alt="" coords="18,155,85,181"/>
+<area shape="rect" id="node3" href="plateau_8h.html" title="Module relatif à la creation, gestion et destruction de chaque plateau. " alt="" coords="50,80,133,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
 <div class="dyncontent">
-<div class="center"><img alt="" border="0" src="interface_8h__dep__incl.png" usemap="#interface_8hdep"/></div>
-<map id="interface_8hdep" name="interface_8hdep">
-<area alt="" coords="18,80,85,107" href="main_8c.html" id="node2" shape="rect" title="Programme permettant de jouer à Durableverse. "/>
+<div class="center"><img src="interface_8h__dep__incl.png" border="0" usemap="#interface_8hdep" alt=""/></div>
+<map name="interface_8hdep" id="interface_8hdep">
+<area shape="rect" id="node2" href="main_8c.html" title="Programme permettant de jouer à Durableverse. " alt="" coords="18,80,85,107"/>
 </map>
 </div>
 </div>
@@ -113,26 +113,26 @@ Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Fonctions</h2></td></tr>
-<tr class="memitem:a3a2542e8b138c004562a9455c02fcc12"><td align="right" class="memItemLeft" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a3a2542e8b138c004562a9455c02fcc12">dispNewTurn</a> (int turnNumber)</td></tr>
+<tr class="memitem:a3a2542e8b138c004562a9455c02fcc12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a3a2542e8b138c004562a9455c02fcc12">dispNewTurn</a> (int turnNumber)</td></tr>
 <tr class="memdesc:a3a2542e8b138c004562a9455c02fcc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche en console un message signifiant qu’un nouveau tour commence, avec toutes les informations utiles (notamment si un nouvel espace pour les cartes Personnel est apparu)  <a href="#a3a2542e8b138c004562a9455c02fcc12">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a3a2542e8b138c004562a9455c02fcc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b152c1bf96fc14737a4317937a61fa0"><td align="right" class="memItemLeft" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a1b152c1bf96fc14737a4317937a61fa0">dispNewPhase</a> (int turnNumber, int phaseNumber, <a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
+<tr class="memitem:a1b152c1bf96fc14737a4317937a61fa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a1b152c1bf96fc14737a4317937a61fa0">dispNewPhase</a> (int turnNumber, int phaseNumber, <a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
 <tr class="memdesc:a1b152c1bf96fc14737a4317937a61fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche en console un message signifiant qu’une nouvelle phase commence et l’ENSIIE associée à cette phase.  <a href="#a1b152c1bf96fc14737a4317937a61fa0">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a1b152c1bf96fc14737a4317937a61fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ef69ef742892bd1498dbf15bb313dd"><td align="right" class="memItemLeft" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad7ef69ef742892bd1498dbf15bb313dd">dispBoard</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
+<tr class="memitem:ad7ef69ef742892bd1498dbf15bb313dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad7ef69ef742892bd1498dbf15bb313dd">dispBoard</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
 <tr class="memdesc:ad7ef69ef742892bd1498dbf15bb313dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche en console le plateau : toutes les informations contenues dedans  <a href="#ad7ef69ef742892bd1498dbf15bb313dd">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ad7ef69ef742892bd1498dbf15bb313dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7b471e82dba4ffb0ad099d42bbdcb51"><td align="right" class="memItemLeft" valign="top"><a class="el" href="structcarte.html">carte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ab7b471e82dba4ffb0ad099d42bbdcb51">askEleve</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
+<tr class="memitem:ab7b471e82dba4ffb0ad099d42bbdcb51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcarte.html">carte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ab7b471e82dba4ffb0ad099d42bbdcb51">askEleve</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
 <tr class="memdesc:ab7b471e82dba4ffb0ad099d42bbdcb51"><td class="mdescLeft">&#160;</td><td class="mdescRight">demande au joueur le type de carte élève qu'il choisit  <a href="#ab7b471e82dba4ffb0ad099d42bbdcb51">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ab7b471e82dba4ffb0ad099d42bbdcb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40c66fc2ae7363a35bea3f43658de7a"><td align="right" class="memItemLeft" valign="top"><a class="el" href="structcarte.html">carte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ab40c66fc2ae7363a35bea3f43658de7a">askAction</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
+<tr class="memitem:ab40c66fc2ae7363a35bea3f43658de7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcarte.html">carte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ab40c66fc2ae7363a35bea3f43658de7a">askAction</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
 <tr class="memdesc:ab40c66fc2ae7363a35bea3f43658de7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">demande à un joueur de choisir une carte de sa main ou de finir sa phase  <a href="#ab40c66fc2ae7363a35bea3f43658de7a">Plus de détails...</a><br /></td></tr>
 <tr class="separator:ab40c66fc2ae7363a35bea3f43658de7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9275521d41f00de84cf6563ae640f7af"><td align="right" class="memItemLeft" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a9275521d41f00de84cf6563ae640f7af">dispWinner</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
+<tr class="memitem:a9275521d41f00de84cf6563ae640f7af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a9275521d41f00de84cf6563ae640f7af">dispWinner</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board)</td></tr>
 <tr class="memdesc:a9275521d41f00de84cf6563ae640f7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche un message annonçant le gagnant, ou une égalité  <a href="#a9275521d41f00de84cf6563ae640f7af">Plus de détails...</a><br /></td></tr>
 <tr class="separator:a9275521d41f00de84cf6563ae640f7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a id="details" name="details"></a><h2 class="groupheader">Description détaillée</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Module d'échange avec l'utilisateur (interface)'. </p>
 <dl class="section author"><dt>Auteur</dt><dd>Pierre-Marie Lefrançois </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>09/03/2020</dd></dl>
@@ -319,12 +319,12 @@ Fonctions</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
-<div class="navpath" id="nav-path"><!-- id is needed for treeview function! -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_8h.html">interface.h</a></li>
     <li class="footer">Généré par
     <a href="http://www.doxygen.org/index.html">
-    <img alt="doxygen" class="footer" src="doxygen.png"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>
