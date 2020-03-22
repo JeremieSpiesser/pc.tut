@@ -36,7 +36,7 @@ void dispNewPhase(int turnNumber, int phaseNumber, plateau board);
 
 /**
  * \fn void dispBoard(plateau board)
- * \brief affiche en console le plateau : toutes les informations contenues dedans
+ * \brief Affiche en console le plateau : toutes les informations contenues dedans
  *
  * @param board de type plateau, le plateau de l'ENSIIE qui doit être affiché
  */
@@ -44,7 +44,7 @@ void dispBoard(plateau board);
 
 /**
  * \fn carte askEleve(plateau board)
- * \brief demande au joueur le type de carte élève qu'il choisit
+ * \brief Demande au joueur le type de carte élève qu'il choisit
  *
  * @param board de type plateau, plateau correspondant à l'ENSIIE à qui on demande de choisir
  * @return la carte correspondant au choix du joueur
@@ -53,7 +53,7 @@ carte askEleve(plateau board);
 
 /**
  * \fn carte askAction(plateau board)
- * \brief demande à un joueur de choisir une carte de sa main ou de finir sa phase
+ * \brief Demande à un joueur de choisir une carte de sa main ou de finir sa phase
  *
  * @param board de type plateau, le plateau de l'ENSIIE qui joue
  * @return la carte correspondant au choix ou la carte vide (type 0) si le joueur finit sa phase
@@ -62,7 +62,7 @@ carte askAction(plateau board);
 
 /**
  * \fn void dispWinner(plateau board)
- * \brief affiche un message annonçant le gagnant, ou une égalité
+ * \brief Affiche en console un message annonçant le gagnant, ou une égalité
  *
  * @param board de type plateau, le plateau du joueur gagnant, peut être NULL en cas d'égalité
  */
