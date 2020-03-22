@@ -1,6 +1,6 @@
 /**
  * \file plateau.h
- * \brief Module relatif à la creatio, gestion et destruction de chaque plateau
+ * \brief Module relatif à la creation, gestion et destruction de chaque plateau
  * \author Jérémie Spiesser et Baptiste Signolle
  * \version 1.0
  * \date 06/03/2020
@@ -11,7 +11,7 @@
 #include "carte.h"
 
 /**
- * @brief Definission de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu, la liste des cartes action et personnel en jeu, l'identifiant de l'ENSIIE associée au plateau, ses PE et DD
+ * @brief Definition de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu, la liste des cartes action et personnel en jeu, l'identifiant de l'ENSIIE associée au plateau, ses PE et DD
  */
 typedef struct plateau* plateau;
 
