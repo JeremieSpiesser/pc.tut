@@ -1,6 +1,6 @@
 /**
  * \file interface.h
- * \brief Module d'échange avec l'utilisateur (interface)'
+ * \brief Module d'échange avec l'utilisateur (interface)
  * \author Pierre-Marie Lefrançois
  * \date 09/03/2020
  *
