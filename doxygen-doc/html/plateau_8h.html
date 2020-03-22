@@ -193,7 +193,7 @@ Fonctions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Renvoie</dt><dd>0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par example) </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par exemple) </dd></dl>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bring a new platal in this world of sufferance dominated by HPC students</p>
+<p>Initialise un plateau</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">uid</td><td>identifiant unique permettant d'identifier l'ENSIIE/le plateau </td></tr>
@@ -347,8 +347,8 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Libère la case mémoire associée au plateau passé en argument : p est un elfe liiiiiibre !</p>
-<p>/!\ : libèration de la case mémoire associée au plateau passé en argument </p><dl class="params"><dt>Paramètres</dt><dd>
+<p>Libère la case mémoire associée au plateau passé en argument</p>
+<p>/!\ : libération de la case mémoire associée au plateau passé en argument </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>plateau valide </td></tr>
   </table>
@@ -477,10 +477,10 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Prépare le plateau au terrible tour qui s'annonce, durant lequel il devra faire face aux ténébreuses forces ENSIIE adverses</p>
+<p>Prépare les plateaux pour le tour à venir, et met à jour le compteur de tour</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>tableaux de plateaux </td></tr>
+    <tr><td class="paramname">p</td><td>tableau de plateaux </td></tr>
     <tr><td class="paramname">n</td><td>taille de p </td></tr>
     <tr><td class="paramname">pnt</td><td>pointeur vers le numéro de tour </td></tr>
   </table>
@@ -504,7 +504,7 @@ Fonctions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Permet la pioche d'une carte du deck et la met dans la main : c'est l'heure du dududuDUEL !</p>
+<p>Permet la pioche d'une carte du deck et la met dans la main</p>
 <p>/!\ : modifie le deck et la main </p><dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>plateau correct non vide </td></tr>
