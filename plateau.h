@@ -17,7 +17,7 @@ typedef struct plateau* plateau;
 
 /**
  * \fn plateau createPlateau(int uid)
- * Bring a new platal in this world of sufferance dominated by HPC students
+ * Initialise un plateau
  *
  * @param uid identifiant unique permettant d'identifier l'ENSIIE/le plateau
  * @return un nouveau plateau
@@ -26,16 +26,16 @@ plateau createPlateau(int uid);
 
 /**
  * \fn void freePlateau(plateau p)
- * Libère la case mémoire associée au plateau passé en argument : p est un elfe liiiiiibre !
+ * Libère la case mémoire associée au plateau passé en argument
  *
- * /!\ : libèration de la case mémoire associée au plateau passé en argument
+ * /!\ : libération de la case mémoire associée au plateau passé en argument
  * @param p plateau valide
  */
 void freePlateau(plateau p);
 
 /**
  * \fn void piocherCarte(plateau p)
- * Permet la pioche d'une carte du deck et la met dans la main : c'est l'heure du dududuDUEL !
+ * Permet la pioche d'une carte du deck et la met dans la main
  *
  * /!\ : modifie le deck et la main
  * @param p plateau correct non vide
@@ -44,9 +44,9 @@ void piocherCarte(plateau p);
 
 /**
  * \fn void nouveauTour(plateau p[], short int n, int* pnt)
- * Prépare le plateau au terrible tour qui s'annonce, durant lequel il devra faire face aux ténébreuses forces ENSIIE adverses
+ * Prépare les plateaux pour le tour à venir, et met à jour le compteur de tour
  *
- * @param p tableaux de plateaux
+ * @param p tableau de plateaux
  * @param n taille de p
  * @param pnt pointeur vers le numéro de tour
  */
@@ -70,7 +70,7 @@ int nbCartesNewPhase(plateau p, int nt);
  * @param p plateau valide
  * @param c carte
  * @param nt entier numéro de tour (commence à 1)
- * @return 0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par example)
+ * @return 0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par exemple)
  */
 int addCarte(plateau p, carte c, int nt);
 
