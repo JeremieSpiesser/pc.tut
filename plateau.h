@@ -1,72 +1,135 @@
-//
-// Created by Jérémie Spiesser on 06/03/2020.
-//
+/**
+ * \file plateau.h
+ * \brief Module relatif à la creation, gestion et destruction de chaque plateau
+ * \author Jérémie Spiesser et Baptiste Signolle
+ * \version 1.0
+ * \date 06/03/2020
+ */
 
 #ifndef PCTUT_PLATEAU_H
 #define PCTUT_PLATEAU_H
 #include "carte.h"
 
+/**
+ * @brief Definition de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu, la liste des cartes action et personnel en jeu, l'identifiant de l'ENSIIE associée au plateau, ses PE et DD
+ */
 typedef struct plateau* plateau;
 
-//@requires rien
-//@asigns rien
-//@ensures retourne un nouveau plateau
-plateau createPlateau();
+/**
+ * \fn plateau createPlateau(int uid)
+ * Initialise un plateau
+ *
+ * @param uid identifiant unique permettant d'identifier l'ENSIIE/le plateau
+ * @return un nouveau plateau
+ */
+plateau createPlateau(int uid);
 
-//@requires un plateau valide
-//@assigns libèration de la case mémoire associée au plateau passé en argument
-//@ensures libère la case mémoire associée au plateau passé en argument
+/**
+ * \fn void freePlateau(plateau p)
+ * Libère la case mémoire associée au plateau passé en argument
+ *
+ * /!\ : libération de la case mémoire associée au plateau passé en argument
+ * @param p plateau valide
+ */
 void freePlateau(plateau p);
 
-//@requires un plateau correct non vide
-//@assigns le deck et la main
-//@ensures pioche une carte du deck et la met dans la main
+/**
+ * \fn void piocherCarte(plateau p)
+ * Permet la pioche d'une carte du deck et la met dans la main
+ *
+ * /!\ : modifie le deck et la main
+ * @param p plateau correct non vide
+ */
 void piocherCarte(plateau p);
 
-//@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
-//@assigns rien
-//@ensures signifie au plateau qu'un nouveau tour commence
-void nouveauTour(plateau p, int* pnt);
+/**
+ * \fn void nouveauTour(plateau p[], short int n, int* pnt)
+ * Prépare les plateaux pour le tour à venir, et met à jour le compteur de tour
+ *
+ * @param p tableau de plateaux
+ * @param n taille de p
+ * @param pnt pointeur vers le numéro de tour
+ */
+void nouveauTour(plateau p[], short int n, int* pnt);
 
-//@requires un plateau correct non vide, pnt : pointe vers le numéro de tour (commence à 1)
-//@assigns rien
-//@ensures retourne nombre de cartes piochées par une ENSIIE au début de sa phase
-int nbCartesNewPhase(plateau p, int* pnt);
+/**
+ * \fn int nbCartesNewPhase(plateau p, int nt)
+ * Calcule le nombre de cartes piochées par une ENSIIE en début de phase
+ *
+ * @param p plateau correct non vide
+ * @param nt numéro de tour (commence à 1)
+ * @return le nombre de cartes piochées par une ENSIIE au début de sa phase
+ */
+int nbCartesNewPhase(plateau p, int nt);
 
-//@requires un plateau p valide, une carte c et un entier nt numéro de tour (commence à 1)
-//@assigns ajoute la carte a la liste des cartes en jeu
-//@ensures l'ajout de la carte sur le plateau, renvoie 0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par example)
+/**
+ * \fn int addCarte(plateau p, carte c, int nt)
+ * Ajoute une carte au plateau
+ *
+ * /!\ : ajoute la carte a la liste des cartes en jeu
+ * @param p plateau valide
+ * @param c carte
+ * @param nt entier numéro de tour (commence à 1)
+ * @return 0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par exemple)
+ */
 int addCarte(plateau p, carte c, int nt);
 
-//@requires un plateau p initialise et une carte c de type 1 (cad de type eleve)
-//@assigns ajoute la carte eleve a la liste des cartes en jeu par le biais de la fonction addCarte
-//@ensures l'ajout de la carte eleve au plateau
-//La carte eleve est passee par le type carte, suivant l'usage il vaudrait peut-etre mieux la passer par le type carte_eleve
+/**
+ * \fn void addEleve(plateau p, carte c)
+ * Ajoute une carte eleve au plateau
+ *
+ * /!\ : ajoute la carte eleve a la liste des cartes en jeu par le biais de la fonction addCarte
+ * @param p plateau initialise
+ * @param c carte de type 1 (cad de type eleve)
+ */
 void addEleve(plateau p, carte c);
 
-//@requires un plateau p initialise et une carte c de la main (de type action ou personnel)
-//@assigns retire c de la main pour la placer sur le terrain
-//@ensures la carte c est alors jouee
+/**
+ * \fn void playCarte(plateau p, carte c)
+ * Cette fonction permet de jouer une carte
+ *
+ * /!\ : retire c de la main pour la placer sur le terrain
+ * @param p plateau initialise
+ * @param c carte de la main (de type action ou personnel)
+ */
 void playCarte(plateau p, carte c);
 
-//@requires un plateau p initialise
-//@assigns rien
-//@ensures retourne le nombre de points d'energie a la disposition de l'ENSIIE du plateau
+/**
+ * \fn int nbPE(plateau p)
+ * Calcule le nombre de points d'énergie à la disposition de l'ENSIIE du plateau
+ *
+ * @param p plateau initialise
+ * @return le nombre de points d'energie a la disposition de l'ENSIIE du plateau
+ */
 int nbPE(plateau p);
 
-//@requires deux plateaux p1 et p2 initialises
-//@assigns rien
-//@ensures retourne 0 si la partie n'est pas terminee, 1 si p1 l'emporte, 2 si c'est p2, 3 en cas d'egalite
-int finPartie(plateau p1, plateau p2);
+/**
+ * \fn short int finPartie(plateau p[], short int n)
+ * Cette fonction permet de déterminer si la partie est terminée
+ *
+ * @param p tableau de plateaux
+ * @param n taille de p
+ * @return -2 si la partie n'est pas terminee, -1 si egalite et sinon renvoie l'indice du plateau gagnant (il ne peut y en avoir qu'un)
+ */
+short int finPartie(plateau p[], short int n);
 
-//@requires un plateau p initialise
-//@assigns rien
-//@ensures retourne le nombre de cartes eleve qui seront ajoutees au plateau
+/**
+ * \fn int nbNewElevesNewPhase(plateau p)
+ * Cette fonction retourne le nombre de cartes eleve qui seront ajoutees au plateau
+ *
+ * @param p plateau initialise
+ * @return le nombre de cartes eleve qui seront ajoutees au plateau
+ */
 int nbNewElevesNewPhase(plateau p);
 
-//@requires deux plateaux p1 et p2 initialises
-//@assigns rien
-//@ensures la cloture du tour, comprend le calcul des DD de chaque plateau 
-void finTour(plateau p1, plateau p2);
+/**
+ * \fn void finTour(plateau p[], short int n)
+ * Cette fonction assure la cloture du tour, comprend le calcul des DD de chaque plateau
+ *
+ * @param p tableau de plateaux
+ * @param n taille du tableau p
+ */
+void finTour(plateau p[], short int n);
 
 #endif //PCTUT_PLATEAU_H
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC(Tut):  Fichier source de interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC(Tut)
+   </div>
+   <div id="projectbrief">Implémente le jeu Durableverse via une CLI codée en C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef PCTUT_INTERFACE_H</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define PCTUT_INTERFACE_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="carte_8h.html">carte.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="plateau_8h.html">plateau.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a3a2542e8b138c004562a9455c02fcc12">dispNewTurn</a>(<span class="keywordtype">int</span> turnNumber);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a1b152c1bf96fc14737a4317937a61fa0">dispNewPhase</a>(<span class="keywordtype">int</span> turnNumber, <span class="keywordtype">int</span> phaseNumber, <a class="code" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ad7ef69ef742892bd1498dbf15bb313dd">dispBoard</a>(<a class="code" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="structcarte.html">carte</a> <a class="code" href="interface_8h.html#ab7b471e82dba4ffb0ad099d42bbdcb51">askEleve</a>(<a class="code" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="structcarte.html">carte</a> <a class="code" href="interface_8h.html#ab40c66fc2ae7363a35bea3f43658de7a">askAction</a>(<a class="code" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a9275521d41f00de84cf6563ae640f7af">dispWinner</a>(<a class="code" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> board);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif //PCTUT_INTERFACE_H</span></div><div class="ttc" id="plateau_8h_html_a291693ce1cd58f57f691aa8c645d1236"><div class="ttname"><a href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a></div><div class="ttdeci">struct plateau * plateau</div><div class="ttdoc">Definition de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu...</div><div class="ttdef"><b>Definition:</b> <a href="plateau_8h_source.html#l00016">plateau.h:16</a></div></div>
+<div class="ttc" id="carte_8h_html"><div class="ttname"><a href="carte_8h.html">carte.h</a></div><div class="ttdoc">Module de gestion des cartes. </div></div>
+<div class="ttc" id="interface_8h_html_a1b152c1bf96fc14737a4317937a61fa0"><div class="ttname"><a href="interface_8h.html#a1b152c1bf96fc14737a4317937a61fa0">dispNewPhase</a></div><div class="ttdeci">void dispNewPhase(int turnNumber, int phaseNumber, plateau board)</div><div class="ttdoc">Affiche en console un message signifiant qu’une nouvelle phase commence et l’ENSIIE associée à cett...</div></div>
+<div class="ttc" id="interface_8h_html_ab40c66fc2ae7363a35bea3f43658de7a"><div class="ttname"><a href="interface_8h.html#ab40c66fc2ae7363a35bea3f43658de7a">askAction</a></div><div class="ttdeci">carte askAction(plateau board)</div><div class="ttdoc">Demande à un joueur de choisir une carte de sa main ou de finir sa phase. </div></div>
+<div class="ttc" id="plateau_8h_html"><div class="ttname"><a href="plateau_8h.html">plateau.h</a></div><div class="ttdoc">Module relatif à la creation, gestion et destruction de chaque plateau. </div></div>
+<div class="ttc" id="interface_8h_html_a9275521d41f00de84cf6563ae640f7af"><div class="ttname"><a href="interface_8h.html#a9275521d41f00de84cf6563ae640f7af">dispWinner</a></div><div class="ttdeci">void dispWinner(plateau board)</div><div class="ttdoc">Affiche en console un message annonçant le gagnant, ou une égalité </div></div>
+<div class="ttc" id="interface_8h_html_a3a2542e8b138c004562a9455c02fcc12"><div class="ttname"><a href="interface_8h.html#a3a2542e8b138c004562a9455c02fcc12">dispNewTurn</a></div><div class="ttdeci">void dispNewTurn(int turnNumber)</div><div class="ttdoc">Affiche en console un message signifiant qu’un nouveau tour commence, avec toutes les informations u...</div></div>
+<div class="ttc" id="interface_8h_html_ab7b471e82dba4ffb0ad099d42bbdcb51"><div class="ttname"><a href="interface_8h.html#ab7b471e82dba4ffb0ad099d42bbdcb51">askEleve</a></div><div class="ttdeci">carte askEleve(plateau board)</div><div class="ttdoc">Demande au joueur le type de carte élève qu&amp;#39;il choisit. </div></div>
+<div class="ttc" id="structcarte_html"><div class="ttname"><a href="structcarte.html">carte</a></div><div class="ttdoc">le type carte qui redirige en fonction du cas vers les structures appropriées </div><div class="ttdef"><b>Definition:</b> <a href="carte_8h_source.html#l00061">carte.h:61</a></div></div>
+<div class="ttc" id="interface_8h_html_ad7ef69ef742892bd1498dbf15bb313dd"><div class="ttname"><a href="interface_8h.html#ad7ef69ef742892bd1498dbf15bb313dd">dispBoard</a></div><div class="ttdeci">void dispBoard(plateau board)</div><div class="ttdoc">Affiche en console le plateau : toutes les informations contenues dedans. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="interface_8h.html">interface.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

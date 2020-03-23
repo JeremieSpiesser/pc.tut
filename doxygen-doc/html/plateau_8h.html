@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PC(Tut): Référence du fichier plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PC(Tut)
+   </div>
+   <div id="projectbrief">Implémente le jeu Durableverse via une CLI codée en C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('plateau_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Module relatif à la creation, gestion et destruction de chaque plateau.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="carte_8h_source.html">carte.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de plateau.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="plateau_8h__incl.png" border="0" usemap="#plateau_8h" alt=""/></div>
+<map name="plateau_8h" id="plateau_8h">
+<area shape="rect" id="node2" href="carte_8h.html" title="Module de gestion des cartes. " alt="" coords="13,80,80,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="plateau_8h__dep__incl.png" border="0" usemap="#plateau_8hdep" alt=""/></div>
+<map name="plateau_8hdep" id="plateau_8hdep">
+<area shape="rect" id="node2" href="interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface) " alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="main_8c.html" title="Programme permettant de jouer à Durableverse. " alt="" coords="59,155,126,181"/>
+</map>
+</div>
+</div>
+<p><a href="plateau_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:a291693ce1cd58f57f691aa8c645d1236"><td class="memItemLeft" align="right" valign="top"><a id="a291693ce1cd58f57f691aa8c645d1236"></a>
+typedef struct <a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a></td></tr>
+<tr class="memdesc:a291693ce1cd58f57f691aa8c645d1236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition de la structure plateau qui comprend le deck, la main, la liste des élèves en jeu, la liste des cartes action et personnel en jeu, l'identifiant de l'ENSIIE associée au plateau, ses PE et DD. <br /></td></tr>
+<tr class="separator:a291693ce1cd58f57f691aa8c645d1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:adea8d7d1640ee1be225ecb72d7dba945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#adea8d7d1640ee1be225ecb72d7dba945">createPlateau</a> (int uid)</td></tr>
+<tr class="separator:adea8d7d1640ee1be225ecb72d7dba945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef50516e63ae69d06d0f000d2033d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a4ef50516e63ae69d06d0f000d2033d7a">freePlateau</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p)</td></tr>
+<tr class="separator:a4ef50516e63ae69d06d0f000d2033d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71a6d7ae2583dc18d7ca7e483fd9fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#ad71a6d7ae2583dc18d7ca7e483fd9fae">piocherCarte</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p)</td></tr>
+<tr class="separator:ad71a6d7ae2583dc18d7ca7e483fd9fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae55e5fb918713722fe60cbc1ab5a32f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#aae55e5fb918713722fe60cbc1ab5a32f">nouveauTour</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p[], short int n, int *pnt)</td></tr>
+<tr class="separator:aae55e5fb918713722fe60cbc1ab5a32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdefdfd2e3b243234d4bb0ec28ce707b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#acdefdfd2e3b243234d4bb0ec28ce707b">nbCartesNewPhase</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p, int nt)</td></tr>
+<tr class="separator:acdefdfd2e3b243234d4bb0ec28ce707b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6df863156e8058d401cc5dd89c2c418"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#ab6df863156e8058d401cc5dd89c2c418">addCarte</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p, <a class="el" href="structcarte.html">carte</a> c, int nt)</td></tr>
+<tr class="separator:ab6df863156e8058d401cc5dd89c2c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11dcad3a3475e079d9c39ede4a3d0fa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a11dcad3a3475e079d9c39ede4a3d0fa9">addEleve</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p, <a class="el" href="structcarte.html">carte</a> c)</td></tr>
+<tr class="separator:a11dcad3a3475e079d9c39ede4a3d0fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d552b19b38b9030ec17ca9ed2cf490a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a9d552b19b38b9030ec17ca9ed2cf490a">playCarte</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p, <a class="el" href="structcarte.html">carte</a> c)</td></tr>
+<tr class="separator:a9d552b19b38b9030ec17ca9ed2cf490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96ab9c6e4b650cf92055e4a903026d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#aa96ab9c6e4b650cf92055e4a903026d5">nbPE</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p)</td></tr>
+<tr class="separator:aa96ab9c6e4b650cf92055e4a903026d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6f53f4cb82e69295289fc3e56876b9"><td class="memItemLeft" align="right" valign="top">short int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a0b6f53f4cb82e69295289fc3e56876b9">finPartie</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p[], short int n)</td></tr>
+<tr class="separator:a0b6f53f4cb82e69295289fc3e56876b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f01fe075fab884696cb462cb28386b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a2f01fe075fab884696cb462cb28386b8">nbNewElevesNewPhase</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p)</td></tr>
+<tr class="separator:a2f01fe075fab884696cb462cb28386b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f3771e906eae708279e128429974bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plateau_8h.html#a40f3771e906eae708279e128429974bc">finTour</a> (<a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> p[], short int n)</td></tr>
+<tr class="separator:a40f3771e906eae708279e128429974bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Module relatif à la creation, gestion et destruction de chaque plateau. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Jérémie Spiesser et Baptiste Signolle </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>06/03/2020 </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="plateau_8h_source.html">plateau.h</a>.</p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab6df863156e8058d401cc5dd89c2c418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6df863156e8058d401cc5dd89c2c418">&#9670;&nbsp;</a></span>addCarte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int addCarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarte.html">carte</a>&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ajoute une carte au plateau</p>
+<p>/!\ : ajoute la carte a la liste des cartes en jeu </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau valide </td></tr>
+    <tr><td class="paramname">c</td><td>carte </td></tr>
+    <tr><td class="paramname">nt</td><td>entier numéro de tour (commence à 1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 en cas de succès, 1 sinon (si il y a déjà trop de carte personnel sur le terrain par exemple) </dd></dl>
+
+</div>
+</div>
+<a id="a11dcad3a3475e079d9c39ede4a3d0fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11dcad3a3475e079d9c39ede4a3d0fa9">&#9670;&nbsp;</a></span>addEleve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addEleve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarte.html">carte</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ajoute une carte eleve au plateau</p>
+<p>/!\ : ajoute la carte eleve a la liste des cartes en jeu par le biais de la fonction addCarte </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau initialise </td></tr>
+    <tr><td class="paramname">c</td><td>carte de type 1 (cad de type eleve) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adea8d7d1640ee1be225ecb72d7dba945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea8d7d1640ee1be225ecb72d7dba945">&#9670;&nbsp;</a></span>createPlateau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a> createPlateau </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise un plateau</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>identifiant unique permettant d'identifier l'ENSIIE/le plateau </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un nouveau plateau </dd></dl>
+
+</div>
+</div>
+<a id="a0b6f53f4cb82e69295289fc3e56876b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6f53f4cb82e69295289fc3e56876b9">&#9670;&nbsp;</a></span>finPartie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short int finPartie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction permet de déterminer si la partie est terminée</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>tableau de plateaux </td></tr>
+    <tr><td class="paramname">n</td><td>taille de p </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>-2 si la partie n'est pas terminee, -1 si egalite et sinon renvoie l'indice du plateau gagnant (il ne peut y en avoir qu'un) </dd></dl>
+
+</div>
+</div>
+<a id="a40f3771e906eae708279e128429974bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f3771e906eae708279e128429974bc">&#9670;&nbsp;</a></span>finTour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void finTour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction assure la cloture du tour, comprend le calcul des DD de chaque plateau</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>tableau de plateaux </td></tr>
+    <tr><td class="paramname">n</td><td>taille du tableau p </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ef50516e63ae69d06d0f000d2033d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef50516e63ae69d06d0f000d2033d7a">&#9670;&nbsp;</a></span>freePlateau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void freePlateau </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Libère la case mémoire associée au plateau passé en argument</p>
+<p>/!\ : libération de la case mémoire associée au plateau passé en argument </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau valide </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acdefdfd2e3b243234d4bb0ec28ce707b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdefdfd2e3b243234d4bb0ec28ce707b">&#9670;&nbsp;</a></span>nbCartesNewPhase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbCartesNewPhase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcule le nombre de cartes piochées par une ENSIIE en début de phase</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau correct non vide </td></tr>
+    <tr><td class="paramname">nt</td><td>numéro de tour (commence à 1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le nombre de cartes piochées par une ENSIIE au début de sa phase </dd></dl>
+
+</div>
+</div>
+<a id="a2f01fe075fab884696cb462cb28386b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f01fe075fab884696cb462cb28386b8">&#9670;&nbsp;</a></span>nbNewElevesNewPhase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbNewElevesNewPhase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction retourne le nombre de cartes eleve qui seront ajoutees au plateau</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau initialise </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le nombre de cartes eleve qui seront ajoutees au plateau </dd></dl>
+
+</div>
+</div>
+<a id="aa96ab9c6e4b650cf92055e4a903026d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96ab9c6e4b650cf92055e4a903026d5">&#9670;&nbsp;</a></span>nbPE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nbPE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcule le nombre de points d'énergie à la disposition de l'ENSIIE du plateau</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau initialise </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le nombre de points d'energie a la disposition de l'ENSIIE du plateau </dd></dl>
+
+</div>
+</div>
+<a id="aae55e5fb918713722fe60cbc1ab5a32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae55e5fb918713722fe60cbc1ab5a32f">&#9670;&nbsp;</a></span>nouveauTour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nouveauTour </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prépare les plateaux pour le tour à venir, et met à jour le compteur de tour</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>tableau de plateaux </td></tr>
+    <tr><td class="paramname">n</td><td>taille de p </td></tr>
+    <tr><td class="paramname">pnt</td><td>pointeur vers le numéro de tour </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad71a6d7ae2583dc18d7ca7e483fd9fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71a6d7ae2583dc18d7ca7e483fd9fae">&#9670;&nbsp;</a></span>piocherCarte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void piocherCarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet la pioche d'une carte du deck et la met dans la main</p>
+<p>/!\ : modifie le deck et la main </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau correct non vide </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d552b19b38b9030ec17ca9ed2cf490a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d552b19b38b9030ec17ca9ed2cf490a">&#9670;&nbsp;</a></span>playCarte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void playCarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="plateau_8h.html#a291693ce1cd58f57f691aa8c645d1236">plateau</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarte.html">carte</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction permet de jouer une carte</p>
+<p>/!\ : retire c de la main pour la placer sur le terrain </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau initialise </td></tr>
+    <tr><td class="paramname">c</td><td>carte de la main (de type action ou personnel) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="plateau_8h.html">plateau.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
