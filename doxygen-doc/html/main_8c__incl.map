@@ -1,5 +1,5 @@
 <map id="main.c" name="main.c">
 <area shape="rect" id="node3" href="$carte_8h.html" title="Module de gestion des cartes. " alt="" coords="147,229,214,256"/>
-<area shape="rect" id="node4" href="$interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface)&#39;. " alt="" coords="152,80,244,107"/>
+<area shape="rect" id="node4" href="$interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface) " alt="" coords="152,80,244,107"/>
 <area shape="rect" id="node5" href="$plateau_8h.html" title="Module relatif à la creation, gestion et destruction de chaque plateau. " alt="" coords="218,155,301,181"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="carte.h" name="carte.h">
-<area shape="rect" id="node2" href="$interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface)&#39;. " alt="" coords="25,155,117,181"/>
+<area shape="rect" id="node2" href="$interface_8h.html" title="Module d&#39;échange avec l&#39;utilisateur (interface) " alt="" coords="25,155,117,181"/>
 <area shape="rect" id="node3" href="$main_8c.html" title="Programme permettant de jouer à Durableverse. " alt="" coords="37,229,104,256"/>
 <area shape="rect" id="node4" href="$plateau_8h.html" title="Module relatif à la creation, gestion et destruction de chaque plateau. " alt="" coords="91,80,173,107"/>
 </map>
