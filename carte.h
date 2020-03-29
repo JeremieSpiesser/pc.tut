@@ -56,6 +56,14 @@ struct carte_action{
 /// \brief pointeur vers un struct carte_action
 typedef struct carte_action* carte_action;
 
+///carte_spe
+///union des 3 types de cartes
+typedef union carte_spe {
+        carte_eleve eleve; 
+        carte_personnel perso; 
+        carte_action action;
+} carte_spe;
+
 /// carte
 /// \brief le type carte qui redirige en fonction du cas vers les structures appropriées
 typedef struct carte {
@@ -63,10 +71,7 @@ typedef struct carte {
     // 1 : carte_eleve,
     // 2 : carte_personnel
     // 3 : carte_action */
-    carte_eleve eleve; /*!< NULL si type != 1 */
-    carte_personnel perso; /*!< NULL si type != 2 */
-    carte_action action; /*!< NULL si type != 3 */
-    //Il n'y a qu'un et un seul de ces pointeurs qui est non nul (et qui pointe vers la carte)
+    carte_spe spe;
 } carte ;
 
 //Fonctions disponibles
