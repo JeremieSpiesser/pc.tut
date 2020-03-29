@@ -1,0 +1,5 @@
+<map id="carte_spe" name="carte_spe">
+<area shape="rect" id="node2" href="$structcarte__eleve.html" title="champs possibles pour une carte élève " alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node3" href="$structcarte__action.html" title="champs possibles pour une carte action " alt="" coords="129,5,231,32"/>
+<area shape="rect" id="node4" href="$structcarte__personnel.html" title="champs possibles pour une carte personnel " alt="" coords="255,5,382,32"/>
+</map>
