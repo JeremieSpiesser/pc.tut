@@ -9,12 +9,11 @@
  *
  */
 #include <stdlib.h>
-#include "carte.h"
-#include "interface.h"
-#include "plateau.h"
+#include "../headers/carte.h"
+#include "../headers/interface.h"
+#include "../headers/plateau.h"
 
-//! Le nombre de joueurs ici doit être < 32 760
-#define NB_JOUEURS 2
+
 
 /**
  * Fonction principale qui permet de jouer à Durableverse
@@ -46,7 +45,7 @@ int main(int argc, char* argv[]) {
         /*
          * On gère un nouveau tour
          */
-        nouveauTour(ensiies, NB_JOUEURS, &tours);
+        nouveauTour(ensiies, &tours);
         /*
          * On crée l'affichage du nouveau tour
          */
@@ -104,8 +103,8 @@ int main(int argc, char* argv[]) {
             }
         }
 
-        finTour(ensiies, NB_JOUEURS);
-        if((codeFin = finPartie(ensiies, NB_JOUEURS)) != -2){
+        finTour(ensiies);
+        if((codeFin = finPartie(ensiies)) != -2){
             /*
              * On pourrait utiliser break directement, mais si on a besoin plus tard dans le futur d'arrêter la
              * boucle de manière propre autant utiliser ça

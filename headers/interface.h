@@ -28,8 +28,8 @@ void dispNewTurn(int turnNumber);
  * \brief Affiche en console un message signifiant qu’une nouvelle phase commence
  * et l’ENSIIE associée à cette phase
  *
- * @param turnNumber entier positif, numéro du nouveau tour
- * @param phaseNumber 0 ou 1, numéro de la phase
+ * @param turnNumber entier positif, numéro du tour
+ * @param phaseNumber 0 ou 1, numéro de la nouvelle phase
  * @param board de type plateau, l'ENSIIE qui va jouer
  */
 void dispNewPhase(int turnNumber, int phaseNumber, plateau board);
@@ -67,5 +67,13 @@ carte askAction(plateau board);
  * @param board de type plateau, le plateau du joueur gagnant, peut être NULL en cas d'égalité
  */
 void dispWinner(plateau board);
+
+/**
+ * \fn void dispError(int errorId)
+ * \brief Affiche en console un message d'erreur
+ *
+ * @param errorId entier, numéro de l'erreur.
+ */
+void dispError(int errorId);
 
 #endif //PCTUT_INTERFACE_H
